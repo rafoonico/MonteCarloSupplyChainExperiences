@@ -1,0 +1,34 @@
+---
+title: Monte Carlo em Supply Chain
+subtitle: Fazendo uso de métodos computacionalmente intensivos em supply chain
+author: Rafael Buttini Salviato
+embed-resources: true 
+execute: 
+  warning: false
+  error: false
+format:
+  html:
+    mainfont: IBM Plex Sans
+    theme: 
+        - minty
+    toc: true
+    toc-depth: 4
+    toc-title: Índice
+    toc-location: right
+    title-block-banner: true
+    code-fold: true
+    number-sections: true
+    css: estilos.css
+jupyter: python3
+engine: knitr
+
+---
+
+# Introdução
+
+Neste documento você vai encontrar alguns experimentos que eu faço utilizando métodos computacionalmente intensivos para análise de cadeia de suprimentos.
+
+## Primeiro teste: cálculo de estoque de segurança
+
+Com base [nesse site aqui](https://supplychaindetective.com/supply-chain-modeling-monte-carlo-simulation/), vamos aplicar o exemplo utilizando o python.
+

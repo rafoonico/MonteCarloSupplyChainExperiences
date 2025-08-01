@@ -14,6 +14,11 @@ def upload_file():
             flash('No file selected')
             return redirect(request.url)
         df = pd.read_csv(file)
+        try:
+            df = pd.read_csv(file)
+        except UnicodeDecodeError:
+            file.seek(0)
+            df = pd.read_csv(file, encoding='latin1')
         forecast = forecast_demand(df, periods)
         params = compute_inventory_parameters(forecast, df)
         return render_template('results.html', forecast=forecast.to_dict(), params=params)

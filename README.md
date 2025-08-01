@@ -17,9 +17,12 @@ Este repositório apresenta uma aplicação simples em Flask para demonstração
 ├── templates
 │   ├── results.html
 │   └── upload.html
-├── ScriptComExperimentos.qmd
-├── ScriptComExperimentos.html
-└── Safety-Stock-Monte-Carlo-vf.xlsx
+├── experiments
+|   ├── BookNicholasVandeput
+|   |   ├── ExamplesFromTheBook.ipynb 
+|   ├── ScriptComExperimentos.qmd
+|   ├── ScriptComExperimentos.html
+|   └── Safety-Stock-Monte-Carlo-vf.xlsx
 ```
 
 ## Executando com Docker
